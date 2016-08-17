@@ -39,7 +39,13 @@
 		</interceptors>
 		<default-interceptor-ref name="crudStack" />
 	</package>
-
+    <!-- 
+    <package name="chapter1" namespace="/chapter1" extends="struts-default">
+       <action name="HelloWorld" class="chapter1.action.Chapter1Action" method="execute">
+         <result name="success">/WEB-INF/JspPage/chapter1/HelloWorld.jsp</result>
+       </action>
+    </package> 
+     -->
 	<!-- 使用Convention插件,实现约定大于配置的零配置文件风格. 特殊的Result路径在Action类中使用@Result设定. -->
 
 </struts>
