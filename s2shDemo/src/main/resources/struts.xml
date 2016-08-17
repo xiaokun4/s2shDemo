@@ -27,8 +27,8 @@
 	<constant name="struts.dispatcher.parametersWorkaround" value="false" />
 
 	<!-- 用于CRUD Action的parent package -->
-	<package name="crud-default" extends="convention-default">
-		<!-- 基于paramsPrepareParamsStack, 增加store interceptor保证actionMessage在redirect后不会丢失 -->
+	<!-- 基于paramsPrepareParamsStack, 增加store interceptor保证actionMessage在redirect后不会丢失 -->
+	<!-- <package name="crud-default" extends="convention-default">
 		<interceptors>
 			<interceptor-stack name="crudStack">
 				<interceptor-ref name="store">
@@ -39,13 +39,13 @@
 		</interceptors>
 		<default-interceptor-ref name="crudStack" />
 	</package>
-    <!-- 
-    <package name="chapter1" namespace="/chapter1" extends="struts-default">
-       <action name="HelloWorld" class="chapter1.action.Chapter1Action" method="execute">
-         <result name="success">/WEB-INF/JspPage/chapter1/HelloWorld.jsp</result>
+	-->
+	<!-- name 唯一 -->
+    <package name="User" namespace="/user" extends="struts-default">
+       <action name="UserinfoAction" class="com.ssm.demo.action.UserinfoAction" method="execute">
+         <result name="success">/WEB-INF/content/user/userinfo.jsp</result>
        </action>
     </package> 
-     -->
 	<!-- 使用Convention插件,实现约定大于配置的零配置文件风格. 特殊的Result路径在Action类中使用@Result设定. -->
 
 </struts>

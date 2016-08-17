@@ -33,7 +33,7 @@ public class TestUserService {
 		UserInfo userInfo = new UserInfo();
 		userInfo.setName("zty");
 		userInfo.setAge(23);
-		userInfo.setTelephone("13212221333");
+		userInfo.setTelephone("132122213331");
 		Integer id = userInfoService.save(userInfo);
 		JSON.toJSONString(id);
 	}
