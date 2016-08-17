@@ -40,12 +40,12 @@
 		<default-interceptor-ref name="crudStack" />
 	</package>
 	-->
+	<!-- 使用Convention插件,实现约定大于配置的零配置文件风格. 特殊的Result路径在Action类中使用@Result设定. -->
+	
 	<!-- name 唯一 -->
     <package name="User" namespace="/user" extends="struts-default">
        <action name="UserinfoAction" class="com.ssm.demo.action.UserinfoAction" method="execute">
          <result name="success">/WEB-INF/content/user/userinfo.jsp</result>
        </action>
     </package> 
-	<!-- 使用Convention插件,实现约定大于配置的零配置文件风格. 特殊的Result路径在Action类中使用@Result设定. -->
-
 </struts>
